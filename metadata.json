@@ -1,0 +1,6 @@
+{
+  "name": "Grit Era Poster",
+  "description": "An interactive, beautifully crafted data visualization poster chronicling the 1990s New York Knicks Grit Era. It includes tactical playboards, radar charts, comparative defense stats, and enforcer dossiers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
