@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;750;900&family=Oswald:wght@505;600;700&family=Bebas+Neue&family=Anton&family=JetBrains+Mono:wght@405;500;700;800&family=Playfair+Display:ital,wght@0,600;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;750;900&family=Oswald:wght@500;600;700&family=Bebas+Neue&family=Anton&family=JetBrains+Mono:wght@400;500;700;800&family=Playfair+Display:ital,wght@0,600;0,900;1,400&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -10,54 +10,82 @@
 
 /* Authentic continuous grunge & paper textures matching the physical poster */
 .poster-main-grunge {
-  background-color: #050506;
+  background-color: #0b0a09;
   background-image: 
     /* Heavy soot and charcoal stains */
-    radial-gradient(circle at 50% 15%, rgba(224, 83, 28, 0.05) 0%, transparent 60%),
-    radial-gradient(circle at 10% 40%, rgba(37, 99, 235, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 50% 15%, rgba(249, 94, 27, 0.09) 0%, transparent 65%),
+    radial-gradient(circle at 15% 45%, rgba(37, 99, 235, 0.05) 0%, transparent 55%),
     radial-gradient(circle at 85% 75%, rgba(0, 0, 0, 0.95), transparent),
+    /* Scorched burnt cardboard edges overlay */
+    radial-gradient(ellipse at center, transparent 40%, rgba(5, 4, 3, 0.92) 100%),
     /* Concrete / fiber grit pattern overlay */
-    repeating-linear-gradient(rgba(255, 255, 255, 0.005) 0px, rgba(255, 255, 255, 0.005) 1px, transparent 1px, transparent 12px),
-    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.005) 0px, rgba(255, 255, 255, 0.005) 1px, transparent 1px, transparent 12px);
-  background-blend-mode: multiply;
+    repeating-linear-gradient(rgba(255, 255, 255, 0.007) 0px, rgba(255, 255, 255, 0.007) 1px, transparent 1px, transparent 12px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.007) 0px, rgba(255, 255, 255, 0.007) 1px, transparent 1px, transparent 12px);
+  background-blend-mode: normal;
 }
 
 /* Weathered wood/coal dark panel with beautiful thin gold boundaries */
 .poster-panel-dark {
-  background-color: #08080a;
-  background-image: radial-gradient(circle at 50% 50%, rgba(20, 20, 24, 0.4) 0%, #050506 105%);
-  border: 1.2px solid rgba(214, 197, 160, 0.22);
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.95);
+  background-color: #12100f;
+  background-image: 
+    radial-gradient(circle at 50% 5%, rgba(249, 115, 22, 0.1) 0%, transparent 60%),
+    linear-gradient(to bottom, rgba(255,255,255,0.01) 1px, transparent 1px);
+  border: 1.5px solid rgba(212, 163, 89, 0.28);
+  box-shadow: 
+    0 12px 35px rgba(0, 0, 0, 0.9), 
+    inset 0 0 20px rgba(0, 0, 0, 0.95);
+  position: relative;
+}
+
+.poster-panel-dark::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 1px dashed rgba(212, 163, 89, 0.08);
+  pointer-events: none;
 }
 
 .poster-panel-dark:hover {
-  border-color: rgba(214, 197, 160, 0.35);
+  border-color: rgba(249, 115, 22, 0.45);
 }
 
 /* High-impact coffee/tea-stained vintage manila folder document background */
 .poster-panel-light {
   background-color: #ebdcc4;
   background-image: 
-    radial-gradient(circle at 80% 20%, rgba(139, 92, 26, 0.08) 0%, transparent 75%),
-    repeating-linear-gradient(transparent, transparent 18px, rgba(139, 92, 26, 0.03) 18px, rgba(139, 92, 26, 0.03) 19px);
-  border: 1.5px solid #bdad94;
+    radial-gradient(circle at 80% 20%, rgba(139, 92, 26, 0.1) 0%, transparent 75%),
+    /* Micro fiber paper textures */
+    repeating-linear-gradient(transparent, transparent 20px, rgba(139, 92, 26, 0.035) 20px, rgba(139, 92, 26, 0.035) 21px);
+  border: 2px solid #bdad94;
   box-shadow: 
-    3px 5px 15px rgba(0, 0, 0, 0.45),
-    inset 0 0 8px rgba(139, 92, 26, 0.05);
-  color: #1c1917;
+    0 15px 35px rgba(0, 0, 0, 0.65),
+    inset 0 0 12px rgba(139, 92, 26, 0.08);
+  position: relative;
 }
 
-.poster-panel-light-hover:hover {
-  background-color: #f2e4cf;
-  border-color: #ab9b80;
+.poster-panel-light::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 1px solid rgba(139, 92, 26, 0.12);
+  pointer-events: none;
 }
 
 /* Stamped spray painted distress on the raw displays */
-.poster-title-distress {
-  text-shadow: 
-    1.5px 1.5px 0.5px rgba(0, 0, 0, 0.9),
-    0px 0px 4px rgba(249, 115, 22, 0.2);
+.title-damaged {
+  font-family: "Bebas Neue", "Anton", "Oswald", "Impact", sans-serif;
   letter-spacing: -0.01em;
+  transform: skewX(-3deg);
+  background: linear-gradient(to right, #ffffff 0%, #ebdcc4 80%, #d4a359 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.98)) drop-shadow(0 0 12px rgba(249, 94, 27, 0.2));
 }
 
 .poster-text-orange {
@@ -69,18 +97,27 @@
 }
 
 .poster-border-gold {
-  border-color: rgba(214, 197, 160, 0.22);
+  border-color: rgba(214, 197, 160, 0.28);
 }
 
 /* Halftone newsprint filter overlay on photos */
 .halftone-photo {
-  filter: grayscale(1) contrast(1.45) brightness(0.95);
+  filter: grayscale(1) contrast(1.5) brightness(0.92);
   mix-blend-mode: luminosity;
   transition: all 0.3s ease;
 }
 
 .halftone-photo:hover {
-  filter: grayscale(0.2) contrast(1.2) brightness(1.0);
+  filter: grayscale(0.15) contrast(1.2) brightness(1.0);
   mix-blend-mode: normal;
 }
+
+/* Simulated Coffee Ring stain overlay */
+.coffee-ring {
+  border: 3px solid rgba(115, 75, 25, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(0.5px);
+}
+
 

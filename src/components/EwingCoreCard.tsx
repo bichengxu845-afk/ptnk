@@ -6,11 +6,7 @@ export default function EwingCoreCard() {
   return (
     <div
       id="ewing-core-card"
-      className="flex flex-col bg-[#eae2ce] text-zinc-900 p-5 rounded-none border-2 border-[#b0a48b] relative shadow-2xl"
-      style={{
-        backgroundImage: "linear-gradient(135deg, #eae2ce 0%, #ded4bc 100%)",
-        boxShadow: "6px 6px 20px rgba(0,0,0,0.6)"
-      }}
+      className="flex flex-col poster-panel-light text-zinc-900 p-5 rounded-none"
     >
       {/* Visual decorative tapes/clips */}
       <MaskingTape className="-top-3 left-4 w-18 z-20" rotation="-rotate-6" />
@@ -18,7 +14,7 @@ export default function EwingCoreCard() {
       <MetalRivet className="absolute bottom-2.5 left-2.5 opacity-30" />
 
       {/* Manila folder top system label */}
-      <div className="absolute -top-[13px] left-3 bg-[#ded4bc] px-2 py-0.5 border-t-2 border-x-2 border-[#b0a48b] font-mono text-[6.5px] text-zinc-600 font-extrabold uppercase tracking-widest rounded-t-sm">
+      <div className="absolute -top-[13px] left-3 bg-[#bdad94] px-2 py-0.5 border-t border-x border-[#bdad94] font-mono text-[6.5px] text-zinc-800 font-extrabold uppercase tracking-widest rounded-t-sm">
          dossier NY_CASE_DEPT_33
       </div>
 

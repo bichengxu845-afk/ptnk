@@ -103,8 +103,8 @@ export default function App() {
       <div className="w-full max-w-7xl mx-auto px-4 flex-1 flex flex-col gap-6 relative z-10">
         
         {/* --- DYNAMIC STICKER CONTROLS --- */}
-        <div id="sticky-audio-controls" className="flex flex-col sm:flex-row items-center justify-between bg-[#11100e] border-2 border-zinc-800/80 rounded px-4 py-2.5 shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 bottom-0 left-0 w-1 bg-orange-600" />
+        <div id="sticky-audio-controls" className="flex flex-col sm:flex-row items-center justify-between poster-panel-dark px-4 py-2.5 rounded-none relative">
+          <div className="absolute top-0 bottom-0 left-0 w-1 bg-orange-600 z-10" />
           
           <div className="flex items-center gap-2.5 mb-2 sm:mb-0">
             <span className="relative flex h-2 w-2">
@@ -152,7 +152,7 @@ export default function App() {
         </div>
 
         {/* --- GRAND POSTER SPECTACULAR HEADER --- */}
-        <header id="poster-header-hero" className="flex flex-col lg:flex-row bg-[#11100e] border-2 border-zinc-800 p-6 lg:p-8 gap-6 relative overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.85)]">
+        <header id="poster-header-hero" className="flex flex-col lg:flex-row poster-panel-dark p-6 lg:p-8 gap-6 relative overflow-hidden">
           <ParquetWoodFloorBackdrop />
 
           {/* Central stage light glow mimicking MSG arena lights */}

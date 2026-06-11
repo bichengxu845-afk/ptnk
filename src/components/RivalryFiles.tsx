@@ -231,15 +231,9 @@ export default function RivalryFiles() {
               onMouseEnter={() => setHoveredRivalId(rival.id)}
               onMouseLeave={() => setHoveredRivalId(null)}
               onClick={() => setActiveFolder(rival)}
-              className={`flex flex-col p-4 bg-[#eae2ce] text-zinc-900 border-2 rounded-none cursor-pointer hover:bg-[#fadfa3] transition-all relative shadow-xl transform ${cardTilt} ${
-                isSelected ? "border-red-800 bg-[#fceec9] z-20" : "border-[#b0a48b]"
+              className={`flex flex-col p-4 poster-panel-light text-zinc-900 cursor-pointer hover:bg-[#fadfa3] transition-all transform ${cardTilt} ${
+                isSelected ? "border-red-800 bg-[#fceec9] z-20" : ""
               }`}
-              style={{
-                backgroundImage: isSelected 
-                  ? "linear-gradient(to bottom, #fadfa3 0%, #ecd394 100%)" 
-                  : "linear-gradient(to bottom, #eae2ce 0%, #ded4bc 100%)",
-                boxShadow: isSelected ? "0 10px 25px rgba(0,0,0,0.5)" : "4px 4px 10px rgba(0,0,0,0.4)"
-              }}
             >
               {isSelected && <RetroPaperclip className="top-1 right-2 opacity-100" />}
 

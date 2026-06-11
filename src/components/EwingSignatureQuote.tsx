@@ -6,11 +6,7 @@ export default function EwingSignatureQuote() {
   return (
     <div
       id="ewing-signature-quote-board"
-      className="flex flex-col bg-[#eae2ce] text-zinc-900 p-5 rounded-none border-2 border-[#b0a48b] relative shadow-2xl overflow-hidden"
-      style={{
-        backgroundImage: "linear-gradient(to bottom, #eae2ce 0%, #dcd1bd 100%)",
-        boxShadow: "5px 5px 15px rgba(0,0,0,0.5)"
-      }}
+      className="flex flex-col poster-panel-light text-zinc-900 p-5 rounded-none overflow-hidden"
     >
       <MetalRivet className="absolute top-2.5 left-2.5 opacity-30" />
       <MaskingTape className="-top-3 right-6 w-20 z-20" rotation="rotate-6" />

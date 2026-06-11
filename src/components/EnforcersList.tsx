@@ -147,17 +147,13 @@ export default function EnforcersList() {
               id={`player-card-${player.id}`}
               whileHover={{ scale: 1.015, rotate: "0deg" }}
               onClick={() => setSelectedPlayer(player)}
-              className={`flex flex-col p-3.5 bg-[#eae2ce] text-zinc-900 border-2 border-[#b0a48b] rounded-none cursor-pointer hover:bg-[#ebdcc4] transition-all relative shadow-xl transform ${tiltDeg}`}
-              style={{
-                backgroundImage: "linear-gradient(135deg, #eae2ce 0%, #dfd5be 100%)",
-                boxShadow: "4px 4px 10px rgba(0,0,0,0.65)"
-              }}
+              className={`flex flex-col p-3.5 poster-panel-light text-zinc-900 cursor-pointer hover:bg-[#f2e4cf] transition-all transform ${tiltDeg}`}
             >
               {/* Retro Paperclip affixed on photo */}
               <RetroPaperclip className="top-1 right-3 opacity-80" />
 
               {/* Manila Folder Tab effect */}
-              <div className="absolute -top-[14px] left-3 bg-[#dfd5be] px-2.5 py-0.5 border-t-2 border-x-2 border-[#b0a48b] font-mono text-[7px] text-zinc-655 font-bold uppercase tracking-wider rounded-t-sm">
+              <div className="absolute -top-[14px] left-3 bg-[#bdad94] px-2.5 py-0.5 border-t border-x border-[#bdad94] font-mono text-[7px] text-zinc-800 font-bold uppercase tracking-wider rounded-t-sm">
                 NY_DEPT_SYS_#0{player.number}
               </div>
 
