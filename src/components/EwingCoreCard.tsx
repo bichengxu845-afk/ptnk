@@ -69,15 +69,15 @@ export default function EwingCoreCard() {
           </div>
           <div className="border-b border-[#b0a48b]/60 pb-1 flex justify-between items-baseline">
             <span className="text-zinc-500 font-bold text-[8.5px]">场均篮板 RPG</span>
-            <span className="text-xl font-black font-display text-red-00">10.9</span>
+            <span className="text-xl font-black font-display text-red-800">10.9</span>
           </div>
           <div className="border-b border-[#b0a48b]/60 pb-1 flex justify-between items-baseline">
             <span className="text-zinc-500 font-bold text-[8.5px]">场均盖帽 BPG</span>
             <span className="text-xl font-black font-display text-red-800">2.8</span>
           </div>
           <div className="flex justify-between items-baseline">
-            <span className="text-zinc-505 font-bold text-[8.5px]">出场时间 MPG</span>
-            <span className="text-xl font-black font-display text-red-800">38.1</span>
+            <span className="text-zinc-500 font-bold text-[8.5px]">出场时间 MPG</span>
+            <span className="text-xl font-black font-display text-[#ef4444]">38.1</span>
           </div>
 
           {/* Quick badge */}

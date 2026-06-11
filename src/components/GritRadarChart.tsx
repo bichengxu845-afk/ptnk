@@ -48,8 +48,9 @@ export default function GritRadarChart() {
     }
   ];
 
-  const center = 135;
-  const maxRadius = 88;
+  const centerX = 135;
+  const centerY = 100;
+  const maxRadius = 80;
   const numAxes = categories.length;
   const axes: AxisPoint[] = categories.map((cat, i) => {
     const angle = -90 + (i * 360) / numAxes;
@@ -59,8 +60,8 @@ export default function GritRadarChart() {
   const getCoordinates = (value: number, angle: number) => {
     const rad = (angle * Math.PI) / 180;
     const r = (value / 100) * maxRadius;
-    const x = center + r * Math.cos(rad);
-    const y = center + r * Math.sin(rad);
+    const x = centerX + r * Math.cos(rad);
+    const y = centerY + r * Math.sin(rad);
     return { x, y };
   };
 
@@ -141,8 +142,8 @@ export default function GritRadarChart() {
               return (
                 <line
                   key={idx}
-                  x1={center}
-                  y1={center}
+                  x1={centerX}
+                  y1={centerY}
                   x2={pt.x}
                   y2={pt.y}
                   stroke="rgba(255, 255, 255, 0.08)"

@@ -240,23 +240,23 @@ export default function App() {
         </header>
 
         {/* --- THREE-COLUMN SYMMETRIC POSTER GRID --- */}
-        <main className="grid grid-cols-1 lg:grid-cols-3 gap-6 relative">
+        <main className="grid grid-cols-1 lg:grid-cols-12 gap-6 relative">
           
           {/* COLUMN 1 (LEFT COLUMN): Grid Index, Ewing Core Player card, and Rivals Confidential Folders */}
-          <div id="col-left" className="flex flex-col gap-6 justify-between">
+          <div id="col-left" className="flex flex-col gap-6 lg:col-span-3">
             <div id="radar-widget" className="relative">
               <GritRadarChart />
             </div>
             <div id="ewing-core-widget" className="relative">
               <EwingCoreCard />
             </div>
-            <div id="rivals-widget" className="relative">
+            <div id="rivals-widget" className="relative text-left">
               <RivalryFiles />
             </div>
           </div>
 
           {/* COLUMN 2 (CENTER INTERACTIVE FOCUS): Madison Square Garden penalty arena with Ewing silhouette, 6 Playoff Series below */}
-          <div id="col-center" className="lg:order-none order-first flex flex-col gap-6">
+          <div id="col-center" className="lg:order-none order-first flex flex-col gap-6 lg:col-span-6">
             <div id="warmap-widget" className="relative h-full">
               <PlayoffWarMap
                 selectedSeriesId={selectedSeriesId}
@@ -269,7 +269,7 @@ export default function App() {
           </div>
 
           {/* COLUMN 3 (RIGHT COLUMN): Blue Wall, Enforcers list, and Patrick Ewing signatures */}
-          <div id="col-right" className="flex flex-col gap-6 justify-between">
+          <div id="col-right" className="flex flex-col gap-6 lg:col-span-3">
             <div id="bluewall-widget" className="relative">
               <BlueWall />
             </div>

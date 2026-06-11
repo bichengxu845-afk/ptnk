@@ -105,7 +105,7 @@ export default function RivalryFiles() {
         该战术板块采用黑帮电影中
         <span className="text-red-400 font-semibold"> “家族旧档” </span>印记格局。中央联络网络通过
         <span className="text-red-500 font-bold">红蓝战术线</span> 指向禁飞区核心
-        <span className="text-orange-505 font-bold font-mono"> 33号尤因时代</span>，解密肉搏纪实。
+        <span className="text-orange-500 font-bold font-mono"> 33号尤因时代</span>，解密肉搏纪实。
       </p>
 
       {/* INTERACTIVE CONNECTIONS BLUEPRINT - FORBIDDEN AREA 33 AT CENTER */}
@@ -245,7 +245,7 @@ export default function RivalryFiles() {
 
               {/* Tag header */}
               <div className="flex justify-between items-baseline border-b border-[#bdad95] pb-1.5 mb-2 relative">
-                <span className="font-mono text-[8s.px] text-zinc-650 font-extrabold uppercase">
+                <span className="font-mono text-[8px] text-zinc-600 font-extrabold uppercase">
                   {rival.caseNum}
                 </span>
                 
@@ -354,7 +354,7 @@ export default function RivalryFiles() {
               <div className="bg-[#f5ebd7] border border-zinc-400 p-4 shadow-inner">
                 <div className="flex items-center gap-1.5">
                   <Activity className="text-red-800 w-4 h-4" />
-                  <span className="font-mono text-xs italic text-red-855 font-black block uppercase">
+                  <span className="font-mono text-xs italic text-red-800 font-black block uppercase">
                     ANTI-EWING ERA TACTICAL PROFILE SHEET:
                   </span>
                 </div>
@@ -370,20 +370,20 @@ export default function RivalryFiles() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
                 {/* Physical Intensity Index */}
                 <div className="bg-[#f0e4cf] p-3 border border-zinc-300">
-                  <span className="font-mono text-[9px] text-zinc-620 uppercase tracking-wider font-extrabold block flex items-center gap-1">
+                  <span className="font-mono text-[9px] text-zinc-600 uppercase tracking-wider font-extrabold block flex items-center gap-1">
                     <AlertTriangle className="text-red-800 w-3.5 h-3.5" /> SURVEILLANCE STRENGH PROFILE / 物理硬度等级
                   </span>
                   {renderIntensityGritMeter(activeFolder.intensity)}
-                  <span className="font-mono text-[8px] text-zinc-550 block mt-1.5">MEASURED ON TENSION SECTOR FORBIDDEN 33 CORES</span>
+                  <span className="font-mono text-[8px] text-zinc-500 block mt-1.5">MEASURED ON TENSION SECTOR FORBIDDEN 33 CORES</span>
                 </div>
 
                 {/* Key Combat Matching */}
                 <div className="bg-[#f0e4cf] p-3 border border-zinc-300">
-                  <span className="font-mono text-[9px] text-zinc-620 uppercase tracking-wider font-extrabold block flex items-center gap-1">
+                  <span className="font-mono text-[9px] text-zinc-600 uppercase tracking-wider font-extrabold block flex items-center gap-1">
                     <Zap className="text-blue-700 w-3.5 h-3.5" /> SHIELD CONFRONTATION MATCH / 宿敌血战绞肉口
                   </span>
                   <p className="font-mono font-black text-red-900 mt-2 text-xs uppercase">{activeFolder.gritMatchup}</p>
-                  <p className="font-sans text-[10px] text-zinc-650 mt-1">{getRivalGritLeader(activeFolder.id).role}</p>
+                  <p className="font-sans text-[10px] text-zinc-500 mt-1">{getRivalGritLeader(activeFolder.id).role}</p>
                 </div>
 
                 {/* Epic Incident Description */}
